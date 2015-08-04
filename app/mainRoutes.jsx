@@ -5,7 +5,7 @@ import { Route, DefaultRoute, NotFoundRoute } from "react-router";
 // Only import from `route-handlers/*`
 import Application  from "route-handlers/Application";
 
-import HomePage     from "route-handlers/HomePage";
+import GalleryPage     from "route-handlers/GalleryPage";
 import NotFoundPage from "route-handlers/NotFoundPage";
 /* eslint-enable */
 
@@ -16,13 +16,8 @@ if(!Object.assign)
 // export routes
 module.exports = (
 	<Route name="app" path="/" handler={Application}>
-
-
-
-		<Route name="home" path="/home" handler={HomePage} />
-
-
-		<DefaultRoute handler={HomePage} />
+    <Route name="gallery" path="/gallery" handler={GalleryPage} />
+    <DefaultRoute handler={GalleryPage} />
 		<NotFoundRoute handler={NotFoundPage} />
 	</Route>
 );

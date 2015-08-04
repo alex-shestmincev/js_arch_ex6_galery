@@ -1,0 +1,45 @@
+.this h2{
+    font-size:14px;
+}
+
+.this div div > div{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    padding: 5px;
+    margin: auto auto;
+
+}
+
+.this div > img{
+    max-width: 150px;
+    max-height: 150px;
+    vertical-align: middle;
+}
+
+.this .settingsBlock, .this .imagesBlock{
+    display: inline-block;
+    height: 700px;
+}
+
+.this .settingsBlock{
+    vertical-align: top;
+    width: 200px;
+}
+
+.this .settingsBlock p{
+    text-align: right;
+    width: 100px;
+}
+
+.this .settingsBlock input{
+    width: 20px;
+    margin-left: 20px;
+}
+.this .settingsBlock label{
+    float: left;
+}
+
+.this .imagesBlock{
+    width: 600px;
+}
